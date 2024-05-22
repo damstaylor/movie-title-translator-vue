@@ -35,7 +35,7 @@
 <script setup lang="ts">
 import { computed, provide, ref, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import SearchDropdown from './components/SearchDropdown.vue'
+import SearchDropdown from './components/SearchDropdown/SearchDropdown.vue'
 
 const router = useRouter()
 const route = useRoute()
