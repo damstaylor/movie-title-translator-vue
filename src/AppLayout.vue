@@ -84,7 +84,7 @@ const formattedMovies = computed(() => {
 const fetchMovieById = async (id: string) => {
   try {
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=c3ee2bb51e36fe8ee23b3c051a560200&language=fr-CA&include_image_language=fr&append_to_response=credits`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=fr-CA&include_image_language=fr&append_to_response=credits`
     )
     const data = await response.json()
     selectedMovie.value = data as Movie
